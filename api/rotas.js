@@ -1,6 +1,9 @@
 import express from 'express'
 
-// export default function adcionarRotas(servidor) {
-//     servidor.use(algumController)
-// servidor.use('/storage/capa', express.static('./storage/capa'));
-// }
+import adminController from '../api/src/controller/adminController.js';
+
+export default function adcionarRotas(servidor) {
+    servidor.use(adminController)
+
+    // servidor.use('/storage/capa', express.static('./storage/capa'));
+}
